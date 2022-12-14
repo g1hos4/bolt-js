@@ -5,10 +5,29 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Edge",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/node
+      ",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+
+    {
       "type": "node",
       "request": "launch",
       "name": "Spec tests",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mochagghosa
+      ",
       "stopOnEntry": false,
       "args": [
         "--config",
@@ -29,3 +48,4 @@
     }
   ]
 }
+run
